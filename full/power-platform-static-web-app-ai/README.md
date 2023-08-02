@@ -343,3 +343,188 @@ With a connection to the Community Events Dataverse table made, you're now ready
         * Fill: ```RGBA(250, 250, 250, 1)```
         * Focused border: ```4```
 
+### Milestone 6: Adding the right sidebar to the Main Body Container
+
+1. In the ```Tree view```, select the ```ctnMainBody``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Vertical Container**.
+
+2. In the ```Tree view```, select the ```Container7``` and rename it to ```ctnRightSidebar```.
+
+3. Make sure that the ```ctnRightSidebar``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Justify (vertical): ```Start```
+        * Align (horizontal): ```Stretch```
+        * Gap: ```16```
+        * Minimum height: ```100```
+        * Align in container: ```Stretch```
+        * Flexible width: ```1```
+        * Fill portions: ```7```
+        * Minimum width: ```250```
+        * PaddingBottom: ```2```
+        * PaddingLeft: ```2```
+        * PaddingRight: ```2```
+        * PaddingTop: ```2```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Border radius: ```4```
+        * Border Thickness: ```0```
+        * DropShadow: ```None```
+        * Visible: ```If(Or(deleteMode, And(MainScreen.Size = ScreenSize.Small, !newMode, !editMode, !itemSelected)), false, true)```
+
+4. In the ```Tree view```, select the ```ctnRightSidebar``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Horizontal Container**.
+
+5. In the ```Tree view```, select the ```Container8``` and rename it to ```ctnSelectedRecordHeader```.
+
+6. Make sure that the ```ctnSelectedRecordHeader``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Justify (horizontal): ```Start```
+        * Align (vertical): ```Center```
+        * Gap: ```0```
+        * Minimum width: ```250```
+        * Align in container: ```Stretch```
+        * Flexible height: ```0```
+        * Height: ```50```
+        * PaddingBottom: ```0```
+        * PaddingLeft: ```0```
+        * PaddingRight: ```0```
+        * PaddingTop: ```0```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Border radius: ```4```
+        * Border Thickness: ```0```
+        * DropShadow: ```Light```
+
+7. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Left** and select **Left**.
+
+8. In the ```Tree view```, select the ```Left1``` and rename it to ```icnBack```.
+
+9. Make sure that the ```icnBack``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Icon: ```Left```
+        * OnSelect: ```UpdateContext({ itemSelected: false })```
+        * Height: ```50```
+        * Align in container: ```Center```
+        * Flexible width: ```0```
+        * Width: ```50```
+        * Visible: ```If(MainScreen.Size = ScreenSize.Small, And(!editMode, !newMode, !deleteMode), false)```
+        * PaddingBottom: ```12```
+        * PaddingLeft: ```12```
+        * PaddingRight: ```12```
+        * PaddingTop: ```12```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Color: ```RGBA(131, 132, 222, 1)```
+        * Focused border: ```4```
+        * Tab Index: ```0```
+
+10. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Label** and select **Label**.
+
+11. In the ```Tree view```, select the ```Label1``` and rename it to ```lblSelectedRecordTitle```.
+
+12. Make sure that the ```lblSelectedRecordTitle``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Text: ```galRecords.Selected.'Event Status'```
+        * Font size: ```13```
+        * Font weight: ```Semibold```
+        * Color: ```RGBA(0, 0, 0, 1)```
+        * Font family: ```Segoe UI```
+        * Height: ```40```
+        * Align in container: ```Center```
+        * Flexible width: ```1```
+        * Minimum width: ```150```
+        * PaddingBottom: ```5```
+        * PaddingLeft: ```5```
+        * PaddingRight: ```5```
+        * PaddingTop: ```5```
+        * BorderThickness: ```2```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Focused border: ```4```
+        * Tab Index: ```-1```
+
+13. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Check** and select **Check**.
+
+14. In the ```Tree view```, select the ```Check1``` and rename it to ```icnSubmitForm```.
+
+15. Make sure that the ```icnSubmitForm``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Icon: ```Check```
+        * OnSelect: ```SubmitForm(Form1)```
+        * Height: ```50```
+        * Align in container: ```Center```
+        * Flexible width: ```0```
+        * Width: ```50```
+        * Visible: ```Or(editMode, newMode)```
+        * PaddingBottom: ```12```
+        * PaddingLeft: ```12```
+        * PaddingRight: ```12```
+        * PaddingTop: ```12```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Color: ```RGBA(131, 132, 222, 1)```
+        * Focused border: ```4```
+        * Tab Index: ```0```
+
+16. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Cancel** and select **Cancel**.
+
+17. In the ```Tree view```, select the ```Cancel1``` and rename it to ```icnResetForm```.
+
+18. Make sure that the ```icnResetForm``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Icon: ```Cancel```
+        * OnSelect: ```ResetForm(Form1); UpdateContext({ editMode: false, newMode: false });```
+        * Height: ```50```
+        * Align in container: ```Center```
+        * Flexible width: ```0```
+        * Width: ```50```
+        * Visible: ```Or(editMode, newMode)```
+        * PaddingBottom: ```12```
+        * PaddingLeft: ```12```
+        * PaddingRight: ```12```
+        * PaddingTop: ```12```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Color: ```RGBA(131, 132, 222, 1)```
+        * Focused border: ```4```
+        * Tab Index: ```0```
+
+19. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Edit** and select **Edit**.
+
+20. In the ```Tree view```, select the ```Edit1``` and rename it to ```icnEdit```.
+
+21. Make sure that the ```icnEdit``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Icon: ```Edit```
+        * OnSelect: ```UpdateContext({ selectedRecord: galRecords.Selected, editMode: true })```
+        * Height: ```50```
+        * Align in container: ```Center```
+        * Flexible width: ```0```
+        * Width: ```50```
+        * Visible: ```And(!editMode, !newMode, !deleteMode)```
+        * PaddingBottom: ```12```
+        * PaddingLeft: ```12```
+        * PaddingRight: ```12```
+        * PaddingTop: ```12```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Color: ```RGBA(131, 132, 222, 1)```
+        * Focused border: ```4```
+        * Tab Index: ```-1```
+
+22. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Trash** and select **Trash**.
+
+23. In the ```Tree view```, select the ```Trash1``` and rename it to ```icnDelete```.
+
+24. Make sure that the ```icnDelete``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Icon: ```Trash```
+        * OnSelect: ```UpdateContext({ deleteMode: true, deleteCancelled: false, selectedRecord: galRecords.Selected })```
+        * Height: ```50```
+        * Align in container: ```Center```
+        * Flexible width: ```0```
+        * Width: ```50```
+        * Visible: ```And(!editMode, !newMode, !deleteMode)```
+        * PaddingBottom: ```12```
+        * PaddingLeft: ```12```
+        * PaddingRight: ```12```
+        * PaddingTop: ```12```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Color: ```RGBA(131, 132, 222, 1)```
+        * Focused border: ```4```
+        * Tab Index: ```0```
+
+
+
+
+
