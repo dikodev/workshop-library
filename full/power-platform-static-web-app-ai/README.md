@@ -524,6 +524,182 @@ With a connection to the Community Events Dataverse table made, you're now ready
         * Focused border: ```4```
         * Tab Index: ```0```
 
+### Milestone 7: Add a Form for data entry to the Right Sidebar container
+
+1. In the ```Tree view```, select the ```ctnRightSidebar``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Vertical Container**.
+
+2. In the ```Tree view```, select the ```VerticalContainer1``` and rename it to ```ctnMainSection```.
+
+3. Make sure that the ```ctnMainSection``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Justify (vertical): ```Start```
+        * Align (horizontal): ```Start```
+        * Gap: ```0```
+        * Minimum width: ```250```
+        * Align in container: ```Stretch```
+        * Flexible height: ```1```
+        * Minimum height: ```100```
+        * PaddingBottom: ```0```
+        * PaddingLeft: ```0```
+        * PaddingRight: ```0```
+        * PaddingTop: ```0```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+
+4. In the ```Tree view```, select the ```ctnMainSection``` and click on the **Insert** tab in the top navigation bar and search for **Form** and select **Form**.
+
+5. In the ```Tree view```, select the ```Form1``` and on the *Properties Pane* select **Advanced**.
+
+6. Click on the **Unlock to change properties** link and change the following properties:
+        * DataSource: ```CommunityEvents```
+        * Item: ```galRecords.Selected```
+        * OnSuccess: ```UpdateContext({ CurrentItem: Self.LastSubmit, editMode: false, newMode: false })```
+        * Columns: ```2```
+        * Layout: ```Vertical```
+        * Default mode: ```If(newMode, FormMode.New, editMode, FormMode.Edit, FormMode.View)```
+        * Minimum width: ```300```
+        * Align in container: ```Stretch```
+        * Flexible height: ```1```
+        * Minimum height: ```250```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+
+7. In the ```Tree view```, select the ```Form1``` and on the *Properties Pane* select **Edit Fields**.
+
+8. Click on the **+ Add field** button and add the following fields.
+        * ```Session Title```
+        * ```Description```
+        * ```Session Owner```
+        * ```Session Owner Email```
+        * ```Session Status```
+        * ```Session Date```
+
+### Milestone 8: Add a Confirmation Dialog to the Main Body container
+
+1. In the ```Tree view```, select the ```ctnMainBody``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Vertical Container**.
+
+2. In the ```Tree view```, select the ```VerticalContainer1``` and rename it to ```ctnDeleteConfirmDialog```.
+
+3. Make sure that the ```ctnDeleteConfirmDialog``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Justify (vertical): ```Start```
+        * Align (horizontal): ```Start```
+        * Gap: ```0```
+        * Minimum height: ```100```
+        * Align in container: ```Stretch```
+        * Flexible height: ```1```
+        * Fill Portion: ```7```
+        * Minimum width: ```250```
+        * PaddingBottom: ```0```
+        * PaddingLeft: ```0```
+        * PaddingRight: ```0```
+        * PaddingTop: ```0```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Border Radius: ```4```
+        * Drop Shadow: ```Light```
+        * Visible: ```If(deleteMode, true, false)```
+
+4. In the ```Tree view```, select the ```ctnDeleteConfirmDialog``` and click on the **Insert** tab in the top navigation bar and search for **Label** and select **Label**.
+
+5. In the ```Tree view```, select the ```Label1``` and rename it to ```lblDeleteConfirmDialog```.
+
+6. Make sure that the ```lblDeleteConfirmDialog``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Text: ```"Are you sure you want to delete this record?"```
+        * Font size: ```13```
+        * Font weight: ```Normal```
+        * Text align: ```Center```
+        * Minimum width: ```150```
+        * Align in container: ```Stretch```
+        * Flexible height: ```1```
+        * Minimum height: ```40```
+        * PaddingBottom: ```5```
+        * PaddingLeft: ```5```
+        * PaddingRight: ```5```
+        * PaddingTop: ```5```
+        * BorderThickness: ```2```
+        * Focus border thickness: ```4```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Tab Index: ```-1```
+
+7. In the ```Tree view```, select the ```ctnDeleteConfirmDialog``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Horizontal Container**.
+
+8. In the ```Tree view```, select the ```HorizontalContainer1``` and rename it to ```ctnDeleteButtonBar```.
+
+9. Make sure that the ```ctnDeleteButtonBar``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Justify (horizontal): ```Center```
+        * Align (vertical): ```Start```
+        * Gap: ```15```
+        * Minimum width: ```250```
+        * Align in container: ```Stretch```
+        * Flexible height: ```1```
+        * Minimum height: ```100```
+        * PaddingBottom: ```0```
+        * PaddingLeft: ```0```
+        * PaddingRight: ```0```
+        * PaddingTop: ```0```
+        * BorderThickness: ```0```
+        * Fill: ```RGBA(0, 0, 0, 0)```
+        * Border Radius: ```4```
+        * Drop Shadow: ```None```
+
+10. In the ```Tree view```, select the ```ctnDeleteButtonBar``` and click on the **Insert** tab in the top navigation bar and search for **Button** and select **Button**.
+
+11. In the ```Tree view```, select the ```Button1``` and rename it to ```btnCancelDelete```.
+
+12. Make sure that the ```btnCancelDelete``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Text: ```"Cancel"```
+        * Font size: ```15```
+        * Font weight: ```Semibold```
+        * Text align: ```Center```
+        * Height: ```40```
+        * Align in container: ```Start```
+        * Flexible width: ```0```
+        * Width: ```160```
+        * OnSelect: ```UpdateContext({ deleteMode: false, deleteCancelled: true })```
+        * PaddingBottom: ```5```
+        * PaddingLeft: ```5```
+        * PaddingRight: ```5```
+        * PaddingTop: ```5```
+        * BorderThickness: ```2```
+        * Border Radius: ```10```
+        * Focus border thickness: ```4```
+        * Fill: ```RGBA(131, 132, 222, 1)```
+        * Color: ```RGBA(255, 255, 255, 1)```
+        * HoverFill: ```ColorFade(RGBA(131, 132, 222, 1), -20%)```
+        * HoverColor: ```RGBA(255, 255, 255, 1)```
+        * PressedColor: ```RGBA(255, 255, 255, 1)```
+        * PressedFill: ```RGBA(134, 135, 219, 0.89)```
+        * Presed Border Color: ```Self.Fill```
+        * Tab Index: ```0```
+
+13. In the ```Tree view```, select the ```ctnDeleteButtonBar``` and click on the **Insert** tab in the top navigation bar and search for **Button** and select **Button**.
+
+14. In the ```Tree view```, select the ```Button2``` and rename it to ```btnConfirmDelete```.
+
+15. Make sure that the ```btnConfirmDelete``` is selected and then in the right *Properties Pane*, change the following properties:
+        * Text: ```"Delete"```
+        * Font size: ```15```
+        * Font weight: ```Semibold```
+        * Text align: ```Center```
+        * Height: ```40```
+        * Align in container: ```End```
+        * Flexible width: ```0```
+        * Width: ```160```
+        * OnSelect: ```Remove([@'Community Events'], selectedRecord); If(IsEmpty(Errors([@'Community Events'], selectedRecord)), UpdateContext( { CurrentItem: First([@'Community Events']), itemSelected: false, editMode: false, newMode: false, deleteMode: false }));```
+        * PaddingBottom: ```5```
+        * PaddingLeft: ```5```
+        * PaddingRight: ```5```
+        * PaddingTop: ```5```
+        * BorderThickness: ```2```
+        * Border Radius: ```10```
+        * Focus border thickness: ```4```
+        * Fill: ```RGBA(131, 132, 222, 1)```
+        * Color: ```RGBA(255, 255, 255, 1)```
+        * HoverFill: ```ColorFade(RGBA(131, 132, 222, 1), -20%)```
+        * HoverColor: ```RGBA(255, 255, 255, 1)```
+        * PressedColor: ```RGBA(255, 255, 255, 1)```
+        * PressedFill: ```RGBA(134, 135, 219, 0.89)```
+        * Presed Border Color: ```Self.Fill```
+        * Tab Index: ```0```
 
 
 
