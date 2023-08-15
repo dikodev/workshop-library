@@ -77,20 +77,20 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 5. Make sure that the ```ctnMainScreen``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (vertical): ```Start```
-* Align (horizontal): ```Stretch```
-* Gap: ```15```
-* X: ```0```
-* Y: ```0```
-* Height: ```Parent.Height```
-* Width: ```Parent.Witdth```
-* PaddingBottom: ```16```
-* PaddingLeft: ```16```
-* PaddingRight: ```16```
-* PaddingTop: ```16```
-* BorderThickness: ```0```
-* Fill: ```RGBA(255,255,255,1)```
-* DropShadow: ```None```
+    * Justify (vertical): ```Start```
+    * Align (horizontal): ```Stretch```
+    * Gap: ```15```
+    * X: ```0```
+    * Y: ```0```
+    * Height: ```Parent.Height```
+    * Width: ```Parent.Witdth```
+    * PaddingBottom: ```16```
+    * PaddingLeft: ```16```
+    * PaddingRight: ```16```
+    * PaddingTop: ```16```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(255,255,255,1)```
+    * DropShadow: ```None```
         
 6. In the ```Tree view```, select the ```ctnMainScreen``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Horizontal Container**.
 
@@ -98,21 +98,21 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 8. Make sure that the ```ctnTableName``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (horizontal): ```Start```
-* Align (vertical): ```Center```
-* Gap: ```0```
-* Minimum width: ```250```
-* Align in container: ```Stretch```
-* Flexible height: ```0```
-* Height: ```68```
-* PaddingBottom: ```0```
-* PaddingLeft: ```0```
-* PaddingRight: ```0```
-* PaddingTop: ```0```
-* BorderThickness: ```0```
-* Fill: ```RGBA(255,255,255,1)```
-* Border radius: ```4```
-* DropShadow: ```Light```
+    * Justify (horizontal): ```Start```
+    * Align (vertical): ```Center```
+    * Gap: ```0```
+    * Minimum width: ```250```
+    * Align in container: ```Stretch```
+    * Flexible height: ```0```
+    * Height: ```68```
+    * PaddingBottom: ```0```
+    * PaddingLeft: ```0```
+    * PaddingRight: ```0```
+    * PaddingTop: ```0```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(255,255,255,1)```
+    * Border radius: ```4```
+    * DropShadow: ```Light```
 
 9. In the ```Tree view```, select the ```ctnTableName``` and click on the **Insert** tab in the top navigation bar and search for **Label** and select **Label**.
 
@@ -120,23 +120,23 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 11. Make sure that the ```lblTableName``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Text: ```DataSourceInfo(CommunityEvents, DataSourceInfo.DisplayName)```
-* Font size: ```16```
-* Font weight: ```Semibold```
-* Font color: ```RGBA(255, 255, 255, 1)```
-* Font family: ```Segoe UI```
-* Minimum height: ```40```
-* Align in container: ```Stretch```
-* Flexible width: ```1```
-* Minimum width: ```150```
-* PaddingBottom: ```16```
-* PaddingLeft: ```16```
-* PaddingRight: ```16```
-* PaddingTop: ```16```
-* BorderThickness: ```0```
-* Fill: ```RGBA(131, 132, 222, 1)```
-* Border radius: ```0```
-* Focused border: ```0```
+    * Text: ```DataSourceInfo(CommunityEvents, DataSourceInfo.DisplayName)```
+    * Font size: ```16```
+    * Font weight: ```Semibold```
+    * Font color: ```RGBA(255, 255, 255, 1)```
+    * Font family: ```Segoe UI```
+    * Minimum height: ```40```
+    * Align in container: ```Stretch```
+    * Flexible width: ```1```
+    * Minimum width: ```150```
+    * PaddingBottom: ```16```
+    * PaddingLeft: ```16```
+    * PaddingRight: ```16```
+    * PaddingTop: ```16```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(131, 132, 222, 1)```
+    * Border radius: ```0```
+    * Focused border: ```0```
 
 ### Milestone 5: Adding a Main Body to the app
 
@@ -146,21 +146,21 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 3. Make sure that the ```ctnMainBody``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (horizontal): ```Start```
-* Align (vertical): ```Start```
-* Gap: ```16```
-* Minimum width: ```250```
-* Align in container: ```Stretch```
-* Flexible height: ```1```
-* Minimum height: ```100```
-* PaddingBottom: ```2```
-* PaddingLeft: ```2```
-* PaddingRight: ```2```
-* PaddingTop: ```2```
-* BorderThickness: ```0```
-* Fill: ```RGBA(255,255,255,1)```
-* Border radius: ```0```
-* DropShadow: ```None```
+    * Justify (horizontal): ```Start```
+    * Align (vertical): ```Start```
+    * Gap: ```16```
+    * Minimum width: ```250```
+    * Align in container: ```Stretch```
+    * Flexible height: ```1```
+    * Minimum height: ```100```
+    * PaddingBottom: ```2```
+    * PaddingLeft: ```2```
+    * PaddingRight: ```2```
+    * PaddingTop: ```2```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(255,255,255,1)```
+    * Border radius: ```0```
+    * DropShadow: ```None```
 
 ### Milestone 6: Adding a Left Sidebar to the Main Body Container
 
@@ -170,23 +170,23 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 3. Make sure that the ```ctnLeftSidebar``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (vertical): ```Start```
-* Align (horizontal): ```Start```
-* Gap: ```10```
-* Minimum height: ```100```
-* Align in container: ```Stretch```
-* Flexible width: ```If(And(MainScreen.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), 0,3)```
- * Fill Portions (Edit in formula bar): ```If(And(MainScreen.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), 0,3)```
-* Minimum width: ```250```
-* PaddingBottom: ```0```
- * PaddingLeft: ```16```
-* PaddingRight: ```16```
-* PaddingTop: ```10```
-* BorderThickness: ```0```
-* Fill: ```RGBA(255,255,255,1)```
-* Border radius: ```4```
-* Border Thickness: ```0```
-* DropShadow: ```Light```
+    * Justify (vertical): ```Start```
+    * Align (horizontal): ```Start```
+    * Gap: ```10```
+    * Minimum height: ```100```
+    * Align in container: ```Stretch```
+    * Flexible width: ```If(And(MainScreen.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), 0,3)```
+    * Fill Portions (Edit in formula bar): ```If(And(MainScreen.Size = ScreenSize.Small, Or(newMode, editMode, itemSelected)), 0,3)```
+    * Minimum width: ```250```
+    * PaddingBottom: ```0```
+    * PaddingLeft: ```16```
+    * PaddingRight: ```16```
+    * PaddingTop: ```10```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(255,255,255,1)```
+    * Border radius: ```4```
+    * Border Thickness: ```0```
+    * DropShadow: ```Light```
         
 4. In the ```Tree view```, select the ```ctnLeftSidebar``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Horizontal Container**.
 
@@ -194,22 +194,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 6. Make sure that the ```ctnSearch``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (horizontal): ```Start```
-* Align (vertical): ```Start```
-* Gap: ```0```
-* Minimum width: ```250```
-* Align in container: ```Stretch```
-* Flexible width: ```0```
-* Minimum height: ```44```
-* PaddingBottom: ```0```
-* PaddingLeft: ```0```
-* PaddingRight: ```0```
-* PaddingTop: ```0```
-* BorderThickness: ```0```
-* Fill: ```RGBA(255,255,255,1)```
-* Border radius: ```0```
-* Border Thickness: ```0```
-* DropShadow: ```None```
+    * Justify (horizontal): ```Start```
+    * Align (vertical): ```Start```
+    * Gap: ```0```
+    * Minimum width: ```250```
+    * Align in container: ```Stretch```
+    * Flexible width: ```0```
+    * Minimum height: ```44```
+    * PaddingBottom: ```0```
+    * PaddingLeft: ```0```
+    * PaddingRight: ```0```
+    * PaddingTop: ```0```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(255,255,255,1)```
+    * Border radius: ```0```
+    * Border Thickness: ```0```
+    * DropShadow: ```None```
 
 7. In the ```Tree view```, select the ```ctnSearch``` and click on the **Insert** tab in the top navigation bar and search for **Text** and select **Text Input**.
 
@@ -217,24 +217,24 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 9. Make sure that the ```txtSearch``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Hint text: ```Search```
-* Default: ```""```
-* Font size: ```14```
-* Font weight: ```Normal```
-* Font color: ```RGBA(0, 0, 0, 1)```
-* Font family: ```Segoe UI```
-* Minimum height: ```44```
-* Align in container: ```Start```
-* Flexible width: ```0```
-* Width: ```320```
-* PaddingBottom: ```5```
-* PaddingLeft: ```12```
-* PaddingRight: ```5```
-* PaddingTop: ```5```
-* BorderThickness: ```1```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Border radius: ```0```
-* Focused border: ```0```
+    * Hint text: ```Search```
+    * Default: ```""```
+    * Font size: ```14```
+    * Font weight: ```Normal```
+    * Font color: ```RGBA(0, 0, 0, 1)```
+    * Font family: ```Segoe UI```
+    * Minimum height: ```44```
+    * Align in container: ```Start```
+    * Flexible width: ```0```
+    * Width: ```320```
+    * PaddingBottom: ```5```
+    * PaddingLeft: ```12```
+    * PaddingRight: ```5```
+    * PaddingTop: ```5```
+    * BorderThickness: ```1```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Border radius: ```0```
+    * Focused border: ```0```
 
 10. In the ```Tree view```, select the ```ctnLeftSidebar``` and click on the **Insert** tab in the top navigation bar and search for **Icon** and select **Search Icon**.
 
@@ -242,20 +242,20 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 12. Make sure that the ```icnSearch``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Icon: ```Search```
-* Height: ```44```
-* Align in container: ```Start```
-* Flexible width: ```0```
-* Width: ```44```
-* PaddingBottom: ```10```
-* PaddingLeft: ```10```
-* PaddingRight: ```10```
-* PaddingTop: ```10```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Color: ```RGBA(131, 132, 222, 1)```
-* Border radius: ```0```
- * Focused border: ```2```
+    * Icon: ```Search```
+    * Height: ```44```
+    * Align in container: ```Start```
+    * Flexible width: ```0```
+    * Width: ```44```
+    * PaddingBottom: ```10```
+    * PaddingLeft: ```10```
+    * PaddingRight: ```10```
+    * PaddingTop: ```10```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Color: ```RGBA(131, 132, 222, 1)```
+    * Border radius: ```0```
+    * Focused border: ```2```
     
 13. In the ```Tree view```, select the ```ctnLeftSidebar``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Horizontal Container**.
 
@@ -263,22 +263,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 15. Make sure that the ```ctnNewRecord``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (horizontal): ```Start```
-* Align (vertical): ```Start```
-* Gap: ```0```
-* Minimum width: ```250```
-* Align in container: ```Stretch```
-* Flexible height: ```0```
-* Height: ```44```
-* PaddingBottom: ```0```
-* PaddingLeft: ```0```
-* PaddingRight: ```0```
-* PaddingTop: ```0```
-* BorderThickness: ```0```
-* Fill: ```RGBA(255,255,255,1)```
-* Border radius: ```4```
-* Border Thickness: ```0```
-* DropShadow: ```None```
+    * Justify (horizontal): ```Start```
+    * Align (vertical): ```Start```
+    * Gap: ```0```
+    * Minimum width: ```250```
+    * Align in container: ```Stretch```
+    * Flexible height: ```0```
+    * Height: ```44```
+    * PaddingBottom: ```0```
+    * PaddingLeft: ```0```
+    * PaddingRight: ```0```
+    * PaddingTop: ```0```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(255,255,255,1)```
+    * Border radius: ```4```
+    * Border Thickness: ```0```
+    * DropShadow: ```None```
 
 16. In the ```Tree view```, select the ```ctnNewRecord``` and click on the **Insert** tab in the top navigation bar and search for **Icon** and select **Add Icon**.
 
@@ -286,20 +286,20 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 18. Make sure that the ```icnAddRecord``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Icon: ```Add```
-* OnSelect: ```NewForm(Form1); UpdateContext({ newMode: true });```
-* Height: ```44```
-* Align in container: ```Start```
-* Flexible width: ```0```
-* Width: ```44```
-* PaddingBottom: ```10```
-* PaddingLeft: ```10```
-* PaddingRight: ```10```
-* PaddingTop: ```10```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Color: ```RGBA(131, 132, 222, 1)```
-* Focused border: ```4```
+    * Icon: ```Add```
+    * OnSelect: ```NewForm(Form1); UpdateContext({ newMode: true });```
+    * Height: ```44```
+    * Align in container: ```Start```
+    * Flexible width: ```0```
+    * Width: ```44```
+    * PaddingBottom: ```10```
+    * PaddingLeft: ```10```
+    * PaddingRight: ```10```
+    * PaddingTop: ```10```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Color: ```RGBA(131, 132, 222, 1)```
+    * Focused border: ```4```
 
 19. In the ```Tree view```, select the ```ctnNewRecord``` and click on the **Insert** tab in the top navigation bar and search for **Label** and select **Label**.
 
@@ -307,22 +307,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 21. Make sure that the ```lblNewRecord``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Text: ```New```
-* Font size: ```13```
-* Font weight: ```Normal```
-* Color: ```RGBA(0, 0, 0, 1)```
-* Font family: ```Segoe UI```
-* Minimum height: ```44```
-* Align in container: ```Start```
-* Flexible width: ```1```
-* Minimum width: ```150```
-* PaddingBottom: ```5```
-* PaddingLeft: ```5```
-* PaddingRight: ```5```
-* PaddingTop: ```5```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Focused border: ```4```
+    * Text: ```New```
+    * Font size: ```13```
+    * Font weight: ```Normal```
+    * Color: ```RGBA(0, 0, 0, 1)```
+    * Font family: ```Segoe UI```
+    * Minimum height: ```44```
+    * Align in container: ```Start```
+    * Flexible width: ```1```
+    * Minimum width: ```150```
+    * PaddingBottom: ```5```
+    * PaddingLeft: ```5```
+    * PaddingRight: ```5```
+    * PaddingTop: ```5```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Focused border: ```4```
 
 22. In the ```Tree view```, select the ```ctnLeftSidebar``` and click on the **Insert** tab in the top navigation bar and search for **Rectangle** and select **Rectangle**.
 
@@ -330,14 +330,14 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 24. Make sure that the ```rectRecordsListSeparator``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Minimum width: ```200```
-* Height: ```1```
-* Align in container: ```Start```
-* Flexible Height: ```0```
-* Border Style: ```None```
-* BorderThickness: ```2```
-* Fill: ```RGBA(225, 223, 221, 1)```
-* Focused border: ```4```
+    * Minimum width: ```200```
+    * Height: ```1```
+    * Align in container: ```Start```
+    * Flexible Height: ```0```
+    * Border Style: ```None```
+    * BorderThickness: ```2```
+    * Fill: ```RGBA(225, 223, 221, 1)```
+    * Focused border: ```4```
 
 25. In the ```Tree view```, select the ```ctnLeftSidebar``` and click on the **Insert** tab in the top navigation bar and search for **Gallery** and select **Vertical Gallery**.
 
@@ -345,16 +345,16 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 27. Make sure that the ```galRecords``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Items: ```Search('Community Events', txtSearch.Text, "contoso_sessionowner", "cr9be_sessiontitle","contoso_eventstatus")```
-* OnSelect: ```UpdateContext({itemSelected: true, CurrentItem: ThisItem })```
-* Layout: ```Title, Subtitle, Body```
-* Minimum width: ```320```
-* Align in container: ```Stretch```
-* Flexible width: ```1```
-* Minimum height: ```287```
-* BorderThickness: ```0```
-* Fill: ```RGBA(250, 250, 250, 1)```
-* Focused border: ```4```
+    * Items: ```Search('Community Events', txtSearch.Text, "contoso_sessionowner", "cr9be_sessiontitle","contoso_eventstatus")```
+    * OnSelect: ```UpdateContext({itemSelected: true, CurrentItem: ThisItem })```
+    * Layout: ```Title, Subtitle, Body```
+    * Minimum width: ```320```
+    * Align in container: ```Stretch```
+    * Flexible width: ```1```
+    * Minimum height: ```287```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(250, 250, 250, 1)```
+    * Focused border: ```4```
 
 ### Milestone 6: Adding the right sidebar to the Main Body Container
 
@@ -364,24 +364,24 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 3. Make sure that the ```ctnRightSidebar``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (vertical): ```Start```
-* Align (horizontal): ```Stretch```
-* Gap: ```16```
-* Minimum height: ```100```
-* Align in container: ```Stretch```
-* Flexible width: ```1```
-* Fill portions: ```7```
-* Minimum width: ```250```
-* PaddingBottom: ```2```
-* PaddingLeft: ```2```
-* PaddingRight: ```2```
-* PaddingTop: ```2```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Border radius: ```4```
-* Border Thickness: ```0```
-* DropShadow: ```None```
-* Visible: ```If(Or(deleteMode, And(MainScreen.Size = ScreenSize.Small, !newMode, !editMode, !itemSelected)), false, true)```
+    * Justify (vertical): ```Start```
+    * Align (horizontal): ```Stretch```
+    * Gap: ```16```
+    * Minimum height: ```100```
+    * Align in container: ```Stretch```
+    * Flexible width: ```1```
+    * Fill portions: ```7```
+    * Minimum width: ```250```
+    * PaddingBottom: ```2```
+    * PaddingLeft: ```2```
+    * PaddingRight: ```2```
+    * PaddingTop: ```2```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Border radius: ```4```
+    * Border Thickness: ```0```
+    * DropShadow: ```None```
+    * Visible: ```If(Or(deleteMode, And(MainScreen.Size = ScreenSize.Small, !newMode, !editMode, !itemSelected)), false, true)```
 
 4. In the ```Tree view```, select the ```ctnRightSidebar``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Horizontal Container**.
 
@@ -389,22 +389,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 6. Make sure that the ```ctnSelectedRecordHeader``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (horizontal): ```Start```
-* Align (vertical): ```Center```
-* Gap: ```0```
-* Minimum width: ```250```
-* Align in container: ```Stretch```
-* Flexible height: ```0```
-* Height: ```50```
-* PaddingBottom: ```0```
-* PaddingLeft: ```0```
-* PaddingRight: ```0```
-* PaddingTop: ```0```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Border radius: ```4```
-* Border Thickness: ```0```
-* DropShadow: ```Light```
+    * Justify (horizontal): ```Start```
+    * Align (vertical): ```Center```
+    * Gap: ```0```
+    * Minimum width: ```250```
+    * Align in container: ```Stretch```
+    * Flexible height: ```0```
+    * Height: ```50```
+    * PaddingBottom: ```0```
+    * PaddingLeft: ```0```
+    * PaddingRight: ```0```
+    * PaddingTop: ```0```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Border radius: ```4```
+    * Border Thickness: ```0```
+    * DropShadow: ```Light```
 
 7. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Left** and select **Left**.
 
@@ -412,22 +412,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 9. Make sure that the ```icnBack``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Icon: ```Left```
-* OnSelect: ```UpdateContext({ itemSelected: false })```
-* Height: ```50```
-* Align in container: ```Center```
-* Flexible width: ```0```
-* Width: ```50```
-* Visible: ```If(MainScreen.Size = ScreenSize.Small, And(!editMode, !newMode, !deleteMode), false)```
-* PaddingBottom: ```12```
-* PaddingLeft: ```12```
-* PaddingRight: ```12```
-* PaddingTop: ```12```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Color: ```RGBA(131, 132, 222, 1)```
-* Focused border: ```4```
-* Tab Index: ```0```
+    * Icon: ```Left```
+    * OnSelect: ```UpdateContext({ itemSelected: false })```
+    * Height: ```50```
+    * Align in container: ```Center```
+    * Flexible width: ```0```
+    * Width: ```50```
+    * Visible: ```If(MainScreen.Size = ScreenSize.Small, And(!editMode, !newMode, !deleteMode), false)```
+    * PaddingBottom: ```12```
+    * PaddingLeft: ```12```
+    * PaddingRight: ```12```
+    * PaddingTop: ```12```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Color: ```RGBA(131, 132, 222, 1)```
+    * Focused border: ```4```
+    * Tab Index: ```0```
 
 10. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Label** and select **Label**.
 
@@ -435,23 +435,23 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 12. Make sure that the ```lblSelectedRecordTitle``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Text: ```galRecords.Selected.'Event Status'```
-* Font size: ```13```
-* Font weight: ```Semibold```
-* Color: ```RGBA(0, 0, 0, 1)```
-* Font family: ```Segoe UI```
-* Height: ```40```
-* Align in container: ```Center```
-* Flexible width: ```1```
-* Minimum width: ```150```
-* PaddingBottom: ```5```
-* PaddingLeft: ```5```
-* PaddingRight: ```5```
-* PaddingTop: ```5```
-* BorderThickness: ```2```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Focused border: ```4```
-* Tab Index: ```-1```
+    * Text: ```galRecords.Selected.'Event Status'```
+    * Font size: ```13```
+    * Font weight: ```Semibold```
+    * Color: ```RGBA(0, 0, 0, 1)```
+    * Font family: ```Segoe UI```
+    * Height: ```40```
+    * Align in container: ```Center```
+    * Flexible width: ```1```
+    * Minimum width: ```150```
+    * PaddingBottom: ```5```
+    * PaddingLeft: ```5```
+    * PaddingRight: ```5```
+    * PaddingTop: ```5```
+    * BorderThickness: ```2```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Focused border: ```4```
+    * Tab Index: ```-1```
 
 13. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Check** and select **Check**.
 
@@ -459,22 +459,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 15. Make sure that the ```icnSubmitForm``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Icon: ```Check```
-* OnSelect: ```SubmitForm(Form1)```
-* Height: ```50```
-* Align in container: ```Center```
-* Flexible width: ```0```
-* Width: ```50```
-* Visible: ```Or(editMode, newMode)```
-* PaddingBottom: ```12```
-* PaddingLeft: ```12```
-* PaddingRight: ```12```
-* PaddingTop: ```12```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Color: ```RGBA(131, 132, 222, 1)```
-* Focused border: ```4```
-* Tab Index: ```0```
+    * Icon: ```Check```
+    * OnSelect: ```SubmitForm(Form1)```
+    * Height: ```50```
+    * Align in container: ```Center```
+    * Flexible width: ```0```
+    * Width: ```50```
+    * Visible: ```Or(editMode, newMode)```
+    * PaddingBottom: ```12```
+    * PaddingLeft: ```12```
+    * PaddingRight: ```12```
+    * PaddingTop: ```12```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Color: ```RGBA(131, 132, 222, 1)```
+    * Focused border: ```4```
+    * Tab Index: ```0```
 
 16. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Cancel** and select **Cancel**.
 
@@ -482,22 +482,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 18. Make sure that the ```icnResetForm``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Icon: ```Cancel```
-* OnSelect: ```ResetForm(Form1); UpdateContext({ editMode: false, newMode: false });```
-* Height: ```50```
-* Align in container: ```Center```
-* Flexible width: ```0```
-* Width: ```50```
-* Visible: ```Or(editMode, newMode)```
-* PaddingBottom: ```12```
-* PaddingLeft: ```12```
-* PaddingRight: ```12```
-* PaddingTop: ```12```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Color: ```RGBA(131, 132, 222, 1)```
-* Focused border: ```4```
-* Tab Index: ```0```
+    * Icon: ```Cancel```
+    * OnSelect: ```ResetForm(Form1); UpdateContext({ editMode: false, newMode: false });```
+    * Height: ```50```
+    * Align in container: ```Center```
+    * Flexible width: ```0```
+    * Width: ```50```
+    * Visible: ```Or(editMode, newMode)```
+    * PaddingBottom: ```12```
+    * PaddingLeft: ```12```
+    * PaddingRight: ```12```
+    * PaddingTop: ```12```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Color: ```RGBA(131, 132, 222, 1)```
+    * Focused border: ```4```
+    * Tab Index: ```0```
 
 19. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Edit** and select **Edit**.
 
@@ -505,22 +505,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 21. Make sure that the ```icnEdit``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Icon: ```Edit```
-* OnSelect: ```UpdateContext({ selectedRecord: galRecords.Selected, editMode: true })```
-* Height: ```50```
-* Align in container: ```Center```
-* Flexible width: ```0```
-* Width: ```50```
-* Visible: ```And(!editMode, !newMode, !deleteMode)```
-* PaddingBottom: ```12```
-* PaddingLeft: ```12```
-* PaddingRight: ```12```
-* PaddingTop: ```12```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Color: ```RGBA(131, 132, 222, 1)```
-* Focused border: ```4```
-* Tab Index: ```-1```
+    * Icon: ```Edit```
+    * OnSelect: ```UpdateContext({ selectedRecord: galRecords.Selected, editMode: true })```
+    * Height: ```50```
+    * Align in container: ```Center```
+    * Flexible width: ```0```
+    * Width: ```50```
+    * Visible: ```And(!editMode, !newMode, !deleteMode)```
+    * PaddingBottom: ```12```
+    * PaddingLeft: ```12```
+    * PaddingRight: ```12```
+    * PaddingTop: ```12```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Color: ```RGBA(131, 132, 222, 1)```
+    * Focused border: ```4```
+    * Tab Index: ```-1```
 
 22. In the ```Tree view```, select the ```ctnSelectedRecordHeader``` and click on the **Insert** tab in the top navigation bar and search for **Trash** and select **Trash**.
 
@@ -528,22 +528,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 24. Make sure that the ```icnDelete``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Icon: ```Trash```
-* OnSelect: ```UpdateContext({ deleteMode: true, deleteCancelled: false, selectedRecord: galRecords.Selected })```
-* Height: ```50```
-* Align in container: ```Center```
-* Flexible width: ```0```
-* Width: ```50```
-* Visible: ```And(!editMode, !newMode, !deleteMode)```
-* PaddingBottom: ```12```
-* PaddingLeft: ```12```
-* PaddingRight: ```12```
-* PaddingTop: ```12```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Color: ```RGBA(131, 132, 222, 1)```
-* Focused border: ```4```
-* Tab Index: ```0```
+    * Icon: ```Trash```
+    * OnSelect: ```UpdateContext({ deleteMode: true, deleteCancelled: false, selectedRecord: galRecords.Selected })```
+    * Height: ```50```
+    * Align in container: ```Center```
+    * Flexible width: ```0```
+    * Width: ```50```
+    * Visible: ```And(!editMode, !newMode, !deleteMode)```
+    * PaddingBottom: ```12```
+    * PaddingLeft: ```12```
+    * PaddingRight: ```12```
+    * PaddingTop: ```12```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Color: ```RGBA(131, 132, 222, 1)```
+    * Focused border: ```4```
+    * Tab Index: ```0```
 
 ### Milestone 7: Add a Form for data entry to the Right Sidebar container
 
@@ -553,19 +553,19 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 3. Make sure that the ```ctnMainSection``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (vertical): ```Start```
-* Align (horizontal): ```Start```
-* Gap: ```0```
-* Minimum width: ```250```
-* Align in container: ```Stretch```
-* Flexible height: ```1```
-* Minimum height: ```100```
-* PaddingBottom: ```0```
-* PaddingLeft: ```0```
-* PaddingRight: ```0```
-* PaddingTop: ```0```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
+    * Justify (vertical): ```Start```
+    * Align (horizontal): ```Start```
+    * Gap: ```0```
+    * Minimum width: ```250```
+    * Align in container: ```Stretch```
+    * Flexible height: ```1```
+    * Minimum height: ```100```
+    * PaddingBottom: ```0```
+    * PaddingLeft: ```0```
+    * PaddingRight: ```0```
+    * PaddingTop: ```0```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
 
 4. In the ```Tree view```, select the ```ctnMainSection``` and click on the **Insert** tab in the top navigation bar and search for **Form** and select **Form**.
 
@@ -573,29 +573,29 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 6. Click on the **Unlock to change properties** link and change the following properties:
 
-* DataSource: ```CommunityEvents```
-* Item: ```galRecords.Selected```
-* OnSuccess: ```UpdateContext({ CurrentItem: Self.LastSubmit, editMode: false, newMode: false })```
-* Columns: ```2```
-* Layout: ```Vertical```
-* Default mode: ```If(newMode, FormMode.New, editMode, FormMode.Edit, FormMode.View)```
-* Minimum width: ```300```
-* Align in container: ```Stretch```
-* Flexible height: ```1```
-* Minimum height: ```250```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
+    * DataSource: ```CommunityEvents```
+    * Item: ```galRecords.Selected```
+    * OnSuccess: ```UpdateContext({ CurrentItem: Self.LastSubmit, editMode: false, newMode: false })```
+    * Columns: ```2```
+    * Layout: ```Vertical```
+    * Default mode: ```If(newMode, FormMode.New, editMode, FormMode.Edit, FormMode.View)```
+    * Minimum width: ```300```
+    * Align in container: ```Stretch```
+    * Flexible height: ```1```
+    * Minimum height: ```250```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
 
 7. In the ```Tree view```, select the ```Form1``` and on the *Properties Pane* select **Edit Fields**.
 
 8. Click on the **+ Add field** button and add the following fields.
 
-* ```Session Title```
-* ```Description```
-* ```Session Owner```
-* ```Session Owner Email```
-* ```Session Status```
-* ```Session Date```
+    * ```Session Title```
+    * ```Description```
+    * ```Session Owner```
+    * ```Session Owner Email```
+    * ```Session Status```
+    * ```Session Date```
 
 ### Milestone 8: Add a Confirmation Dialog to the Main Body container
 
@@ -605,23 +605,23 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 3. Make sure that the ```ctnDeleteConfirmDialog``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (vertical): ```Start```
-* Align (horizontal): ```Start```
-* Gap: ```0```
-* Minimum height: ```100```
-* Align in container: ```Stretch```
-* Flexible height: ```1```
-* Fill Portion: ```7```
-* Minimum width: ```250```
-* PaddingBottom: ```0```
-* PaddingLeft: ```0```
-* PaddingRight: ```0```
-* PaddingTop: ```0```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Border Radius: ```4```
-* Drop Shadow: ```Light```
-* Visible: ```If(deleteMode, true, false)```
+    * Justify (vertical): ```Start```
+    * Align (horizontal): ```Start```
+    * Gap: ```0```
+    * Minimum height: ```100```
+    * Align in container: ```Stretch```
+    * Flexible height: ```1```
+    * Fill Portion: ```7```
+    * Minimum width: ```250```
+    * PaddingBottom: ```0```
+    * PaddingLeft: ```0```
+    * PaddingRight: ```0```
+    * PaddingTop: ```0```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Border Radius: ```4```
+    * Drop Shadow: ```Light```
+    * Visible: ```If(deleteMode, true, false)```
 
 4. In the ```Tree view```, select the ```ctnDeleteConfirmDialog``` and click on the **Insert** tab in the top navigation bar and search for **Label** and select **Label**.
 
@@ -629,22 +629,22 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 6. Make sure that the ```lblDeleteConfirmDialog``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Text: ```"Are you sure you want to delete this record?"```
-* Font size: ```13```
-* Font weight: ```Normal```
-* Text align: ```Center```
-* Minimum width: ```150```
-* Align in container: ```Stretch```
-* Flexible height: ```1```
-* Minimum height: ```40```
-* PaddingBottom: ```5```
-* PaddingLeft: ```5```
-* PaddingRight: ```5```
-* PaddingTop: ```5```
-* BorderThickness: ```2```
-* Focus border thickness: ```4```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Tab Index: ```-1```
+    * Text: ```"Are you sure you want to delete this record?"```
+    * Font size: ```13```
+    * Font weight: ```Normal```
+    * Text align: ```Center```
+    * Minimum width: ```150```
+    * Align in container: ```Stretch```
+    * Flexible height: ```1```
+    * Minimum height: ```40```
+    * PaddingBottom: ```5```
+    * PaddingLeft: ```5```
+    * PaddingRight: ```5```
+    * PaddingTop: ```5```
+    * BorderThickness: ```2```
+    * Focus border thickness: ```4```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Tab Index: ```-1```
 
 7. In the ```Tree view```, select the ```ctnDeleteConfirmDialog``` and click on the **Insert** tab in the top navigation bar and search for **Container** and select **Horizontal Container**.
 
@@ -652,21 +652,21 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 9. Make sure that the ```ctnDeleteButtonBar``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Justify (horizontal): ```Center```
-* Align (vertical): ```Start```
-* Gap: ```15```
-* Minimum width: ```250```
-* Align in container: ```Stretch```
-* Flexible height: ```1```
-* Minimum height: ```100```
-* PaddingBottom: ```0```
-* PaddingLeft: ```0```
-* PaddingRight: ```0```
-* PaddingTop: ```0```
-* BorderThickness: ```0```
-* Fill: ```RGBA(0, 0, 0, 0)```
-* Border Radius: ```4```
-* Drop Shadow: ```None```
+    * Justify (horizontal): ```Center```
+    * Align (vertical): ```Start```
+    * Gap: ```15```
+    * Minimum width: ```250```
+    * Align in container: ```Stretch```
+    * Flexible height: ```1```
+    * Minimum height: ```100```
+    * PaddingBottom: ```0```
+    * PaddingLeft: ```0```
+    * PaddingRight: ```0```
+    * PaddingTop: ```0```
+    * BorderThickness: ```0```
+    * Fill: ```RGBA(0, 0, 0, 0)```
+    * Border Radius: ```4```
+    * Drop Shadow: ```None```
 
 10. In the ```Tree view```, select the ```ctnDeleteButtonBar``` and click on the **Insert** tab in the top navigation bar and search for **Button** and select **Button**.
 
@@ -674,30 +674,30 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 12. Make sure that the ```btnCancelDelete``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Text: ```"Cancel"```
-* Font size: ```15```
-* Font weight: ```Semibold```
-* Text align: ```Center```
-* Height: ```40```
-* Align in container: ```Start```
-* Flexible width: ```0```
-* Width: ```160```
-* OnSelect: ```UpdateContext({ deleteMode: false, deleteCancelled: true })```
-* PaddingBottom: ```5```
-* PaddingLeft: ```5```
-* PaddingRight: ```5```
-* PaddingTop: ```5```
-* BorderThickness: ```2```
-* Border Radius: ```10```
-* Focus border thickness: ```4```
-* Fill: ```RGBA(131, 132, 222, 1)```
-* Color: ```RGBA(255, 255, 255, 1)```
-* HoverFill: ```ColorFade(RGBA(131, 132, 222, 1), -20%)```
-* HoverColor: ```RGBA(255, 255, 255, 1)```
-* PressedColor: ```RGBA(255, 255, 255, 1)```
-* PressedFill: ```RGBA(134, 135, 219, 0.89)```
-* Presed Border Color: ```Self.Fill```
-* Tab Index: ```0```
+    * Text: ```"Cancel"```
+    * Font size: ```15```
+    * Font weight: ```Semibold```
+    * Text align: ```Center```
+    * Height: ```40```
+    * Align in container: ```Start```
+    * Flexible width: ```0```
+    * Width: ```160```
+    * OnSelect: ```UpdateContext({ deleteMode: false, deleteCancelled: true })```
+    * PaddingBottom: ```5```
+    * PaddingLeft: ```5```
+    * PaddingRight: ```5```
+    * PaddingTop: ```5```
+    * BorderThickness: ```2```
+    * Border Radius: ```10```
+    * Focus border thickness: ```4```
+    * Fill: ```RGBA(131, 132, 222, 1)```
+    * Color: ```RGBA(255, 255, 255, 1)```
+    * HoverFill: ```ColorFade(RGBA(131, 132, 222, 1), -20%)```
+    * HoverColor: ```RGBA(255, 255, 255, 1)```
+    * PressedColor: ```RGBA(255, 255, 255, 1)```
+    * PressedFill: ```RGBA(134, 135, 219, 0.89)```
+    * Presed Border Color: ```Self.Fill```
+    * Tab Index: ```0```
 
 13. In the ```Tree view```, select the ```ctnDeleteButtonBar``` and click on the **Insert** tab in the top navigation bar and search for **Button** and select **Button**.
 
@@ -705,30 +705,30 @@ With a connection to the Community Events Dataverse table made, you're now ready
 
 15. Make sure that the ```btnConfirmDelete``` is selected and then in the right *Properties Pane*, change the following properties:
 
-* Text: ```"Delete"```
-* Font size: ```15```
-* Font weight: ```Semibold```
-* Text align: ```Center```
-* Height: ```40```
-* Align in container: ```End```
-* Flexible width: ```0```
-* Width: ```160```
-* OnSelect: ```Remove([@'Community Events'], selectedRecord); If(IsEmpty(Errors([@'Community Events'], selectedRecord)), UpdateContext( { CurrentItem: First([@'Community Events']), itemSelected: false, editMode: false, newMode: false, deleteMode: false }));```
-* PaddingBottom: ```5```
-* PaddingLeft: ```5```
-* PaddingRight: ```5```
-* PaddingTop: ```5```
-* BorderThickness: ```2```
-* Border Radius: ```10```
-* Focus border thickness: ```4```
-* Fill: ```RGBA(131, 132, 222, 1)```
-* Color: ```RGBA(255, 255, 255, 1)```
-* HoverFill: ```ColorFade(RGBA(131, 132, 222, 1), -20%)```
-* HoverColor: ```RGBA(255, 255, 255, 1)```
-* PressedColor: ```RGBA(255, 255, 255, 1)```
-* PressedFill: ```RGBA(134, 135, 219, 0.89)```
-* Presed Border Color: ```Self.Fill```
-* Tab Index: ```0```
+    * Text: ```"Delete"```
+    * Font size: ```15```
+    * Font weight: ```Semibold```
+    * Text align: ```Center```
+    * Height: ```40```
+    * Align in container: ```End```
+    * Flexible width: ```0```
+    * Width: ```160```
+    * OnSelect: ```Remove([@'Community Events'], selectedRecord); If(IsEmpty(Errors([@'Community Events'], selectedRecord)), UpdateContext( { CurrentItem: First([@'Community Events']), itemSelected: false, editMode: false, newMode: false, deleteMode: false }));```
+    * PaddingBottom: ```5```
+    * PaddingLeft: ```5```
+    * PaddingRight: ```5```
+    * PaddingTop: ```5```
+    * BorderThickness: ```2```
+    * Border Radius: ```10```
+    * Focus border thickness: ```4```
+    * Fill: ```RGBA(131, 132, 222, 1)```
+    * Color: ```RGBA(255, 255, 255, 1)```
+    * HoverFill: ```ColorFade(RGBA(131, 132, 222, 1), -20%)```
+    * HoverColor: ```RGBA(255, 255, 255, 1)```
+    * PressedColor: ```RGBA(255, 255, 255, 1)```
+    * PressedFill: ```RGBA(134, 135, 219, 0.89)```
+    * Presed Border Color: ```Self.Fill```
+    * Tab Index: ```0```
 
 
 

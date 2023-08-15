@@ -53,7 +53,9 @@ Smart Shopping Planner is a React application built using JavaScript, that store
 10. In the **Create text with GPT (preview)** action, remove the text **##Include text here** and replace it with the following.
 
     ```
-    ## @{triggerOutputs()?['body/sessionowner']} has requested to be part of the upcoming community calls by hosting a session on @{triggerOutputs()?['body/sessiontitle']}. The session is about @{triggerOutputs()?['body/sessiondescription']}
+    @{triggerOutputs()?['body/sessionowner']} has requested to be part of the upcoming community calls by hosting a session on @{triggerOutputs()?['body/sessiontitle']}. 
+    
+    The session is about @{triggerOutputs()?['body/sessiondescription']}
     ```
 
     ![Screenshot of the Power Automate action with the text filled in](images/08.png 'Power Automate action')
@@ -69,11 +71,11 @@ Smart Shopping Planner is a React application built using JavaScript, that store
     - **Approval type**: `Approve/Reject - First to respond`
     - **Title**: `Approval Request for New Session`
     - **Assigned to**: `enter desired email address`
-    - **Details**: `Hi Community Manager,
+    - **Details**: ```Hi Community Manager,
     
     We have a new request for our community calls session, below is a few details partaining to the request.
     
-    Request Summary: @{outputs('Create_text_with_GPT_(preview)')?['body/responsev2/predictionOutput/text']}`
+    Request Summary: @{outputs('Create_text_with_GPT_(preview)')?['body/responsev2/predictionOutput/text']}```
 
     Original Request: 
     Session Title: @triggerOutputs()?['body/sessiontitle']
@@ -123,7 +125,7 @@ Smart Shopping Planner is a React application built using JavaScript, that store
 
     - **To**: `Add the dynamic content Session Owner`
     - **Subject**: `Your session has been approved!`
-    - **Body**: `Hi @{triggerOutputs()?['body/sessionowner']},
+    - **Body**: ```Hi @{triggerOutputs()?['body/sessionowner']},
 
     We are happy to inform you that your session has been approved. Please see below for the details of your session.
 
@@ -135,7 +137,7 @@ Smart Shopping Planner is a React application built using JavaScript, that store
     We look forward to seeing you at the event!
 
     Best Regards,
-    Community Manager`
+    Community Manager```
 
     ![Screenshot of the Power Automate action with the details filled in](images/16.png 'Power Automate action')
 
@@ -168,33 +170,36 @@ In this milestone, you'll create a flow that sends an email to the session owner
 
     - **Name**: `varEventsTable`
     - **Type**: `String`
-    - **Value**: ```<style>
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
+    - **Value**: 
 
-td, th {
-  border: 2px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+        ```<style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-</style>
-<table>
-<thead>
-  <tr>
-    <th>Session Title</th>
-    <th>Description</th>
-    <th>Session Date</th>
-<th>Days away</th>
-  </tr>
-  </thead>
-<tbody>```
+        td, th {
+            border: 2px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+
+        </style>
+            <table>
+                <thead>
+                    <tr>
+                    <th>Session Title</th>
+                    <th>Description</th>
+                    <th>Session Date</th>
+                    <th>Days away</th>
+                    </tr>
+                </thead>
+        <tbody>```
 
     ![Screenshot of the Power Automate action with the details filled in](images/20.png 'Power Automate action')
 
@@ -231,7 +236,10 @@ tr:nth-child(even) {
 
 15. In the **Compose** action, update it with following details.
 
-    - **Inputs**: `Click on expressions and add the following expression:` ```div(sub(ticks(formatDateTime(items('Apply_to_each')?['cr9be_sessiondate'],'yyyy-MM-dd')), ticks(formatDateTime(utcNow(),'yyyy-MM-dd'))),864000000000)```
+    - **Inputs**: Click on expressions and add the following expression
+        ```
+        div(sub(ticks(formatDateTime(items('Apply_to_each')?['cr9be_sessiondate'],'yyyy-MM-dd')), ticks(formatDateTime(utcNow(),'yyyy-MM-dd'))),864000000000)
+        ```
 
     ![Screenshot of the Power Automate action with the details filled in](images/26.png 'Power Automate action')
 
@@ -243,9 +251,15 @@ tr:nth-child(even) {
 
 18. In the **Condition** action, update it with following details.
 
-    - **Choose a value**: `Click on expressions and add the following expression:` ```int(outputs('Difference_in_days'))```
+    - **Choose a value**: Click on expressions and add the following expression:
+        ```
+        int(outputs('Difference_in_days'))
+        ```
     - **is greater than**: '0'
-    - **Choose a value**: `Click on expressions and add the following expression:` ```int(outputs('Difference_in_days'))```
+    - **Choose a value**: Click on expressions and add the following expression: 
+        ```
+        int(outputs('Difference_in_days'))
+        ```
     - **is less than or equal to**: '15'
 
     ![Screenshot of the Power Automate action with the details filled in](images/28.png 'Power Automate action')
@@ -259,12 +273,13 @@ tr:nth-child(even) {
 21. In the **Append to string variable** action, update it with following details.
 
     - **Name**: `varEventsTable`
-    - **Value**: ```Click on expressions and add the following expression```: ```<tr style"background-color: #e1e1e1">
-    <td>@{items('Apply_to_each')?['cr9be_sessiontitle']}</td>
-    <td>@{items('Apply_to_each')?['cr9be_description']}</td>
-    <td>@{formatDateTime(items('Apply_to_each')?['cr9be_sessiondate'],'dd-MM-yyyy')}</td>
-<td>@{outputs('Difference_in_days')} days</td>
-  </tr>```
+    - **Value**: Click on expressions and add the following expression: 
+        ```<tr style"background-color: #e1e1e1">
+            <td>@{items('Apply_to_each')?['cr9be_sessiontitle']}</td>
+            <td>@{items('Apply_to_each')?['cr9be_description']}</td>
+            <td>@{formatDateTime(items('Apply_to_each')?['cr9be_sessiondate'],'dd-MM-yyyy')}</td>
+            <td>@{outputs('Difference_in_days')} days</td>
+        </tr>```
 
     ![Screenshot of the Power Automate action with the details filled in](images/30.png 'Power Automate action')
 
@@ -275,8 +290,10 @@ tr:nth-child(even) {
 23. In the **Append to string variable** action, update it with following details.
 
     - **Name**: ```varEventsTable```
-    - **Value**: ```Click on expressions and add the following expression```: ```</tbody></table>```
-
+    - **Value**: Click on expressions and add the following expression: 
+        ```
+        </tbody></table>
+        ```
     ![Screenshot of the Power Automate action with the details filled in](images/32.png 'Power Automate action')
 
 24. Click **+ New step**.
@@ -287,9 +304,12 @@ tr:nth-child(even) {
 
 26. In the **Send an email (V2)** action, update it with following details.
 
-    - **To**: ```Click on dynamic content and add the following```: ```'Dynamic Content of the community memebers email''```
-    - **Subject**: ```Click on expressions and add the following expression```: ```'Community Events in next 15 days'```
-    - **Body**: ```Click on dynamic content and add the following```: ```variables('varEventsTable')```
+    - **To**: Click on dynamic content and add the following: ```'Dynamic Content of the community memebers email''```
+    - **Subject**: Click on expressions and add the following expression: ```'Community Events in next 15 days'```
+    - **Body**: Click on dynamic content and add the following: 
+        ```
+        variables('varEventsTable')
+        ```
     - **Is HTML**: ```Yes```
 
     ![Screenshot of the Power Automate action with the details filled in](images/34.png 'Power Automate action')
