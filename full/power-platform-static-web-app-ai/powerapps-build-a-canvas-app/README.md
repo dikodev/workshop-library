@@ -80,9 +80,9 @@ With a connection to the Community Events Dataverse table made, you're now ready
 * Justify (vertical): ```Start```
 * Align (horizontal): ```Stretch```
 * Gap: ```15```
- * X: ```0```
+* X: ```0```
 * Y: ```0```
- * Height: ```Parent.Height```
+* Height: ```Parent.Height```
 * Width: ```Parent.Witdth```
 * PaddingBottom: ```16```
 * PaddingLeft: ```16```
